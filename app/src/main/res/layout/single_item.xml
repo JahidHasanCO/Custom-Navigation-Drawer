@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#4A4848"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_height="120dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp">
+                <ImageView
+                    android:id="@+id/cycleImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg"
+                    android:scaleType="centerCrop"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    <LinearLayout
+
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/cyclePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$200"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/cycleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veloce Legion 30"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/cycleDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Butted Hydro formed"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/primary"
+                app:cardCornerRadius="15dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_arrow_right_3"
+                    android:padding="10dp"
+                    app:tint="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -21,7 +21,7 @@
             <ImageView
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="60dp"
                 android:layout_width="34dp"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_menu2"/>
@@ -178,11 +178,13 @@
                 android:tag="content" />
 
             <androidx.appcompat.widget.Toolbar
+                android:layout_marginTop="15dp"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:navigationIcon="@drawable/ic_menu"
+                app:title="Box"
                 android:id="@+id/toolbar"/>
 
         </RelativeLayout>
